@@ -4,6 +4,10 @@
 // not /3 or /5 => input
 // not a number => 'Não é um número'
 
+const resultado = fizzBuzz(15)
+// 1, 3, 5, 15, 'string', boolean
+console.log(resultado);
+
 function fizzBuzz(input) {
   if (typeof input != 'number')
     return 'Não é um número';
