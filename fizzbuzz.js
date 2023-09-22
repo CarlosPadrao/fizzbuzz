@@ -5,17 +5,17 @@
 // not a number => 'Não é um número'
 
 const resultado = fizzBuzz(15)
-// 1, 3, 5, 15, 'string', boolean
+// 1, 3, 5, 15, 'string', true, false
 console.log(resultado);
 
 function fizzBuzz(input) {
   if (typeof input != 'number')
     return 'Não é um número';
-  if (input % 3 === 0) && (input % 5 === 0)
+  if ((input % 3 === 0) && (input % 5 === 0))
     return 'FizzBuzz';
   if (input % 3 === 0)
     return 'Fizz';
-  if (input % 5 ===0)
+  if (input % 5 === 0)
     return 'Buzz';
 
   return input;
